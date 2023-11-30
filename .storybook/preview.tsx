@@ -14,7 +14,10 @@ const preview: Preview = {
     (Story) => {
       return (
         <>
-          <div>ENV[{process.env.NEXT_PUBLIC_TWICPICS_DOMAIN}]</div>
+          <div>
+            ENV[{process.env.NEXT_PUBLIC_TWICPICS_DOMAIN} /{" "}
+            {process.env.STORYBOOK_NEXT_PUBLIC_TWICPICS_DOMAIN}]
+          </div>
           <Story />
         </>
       );
